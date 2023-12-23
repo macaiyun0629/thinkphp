@@ -1,0 +1,10 @@
+version: "3.8"
+
+services:
+  composer:
+    image: registry.cn-hangzhou.aliyuncs.com/macaiyun0629/composer
+    volumes:
+        - ./project:/app
+    command: /bin/sh
+    stdin_open: true 
+    tty: true
